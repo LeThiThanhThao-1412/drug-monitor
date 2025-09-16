@@ -3,11 +3,11 @@ let Drugdb = require('../model/model');
 
 // creates and saves a new drug
 exports.create = (req,res)=>{
-    // validate incoming request
+    /*// validate incoming request
     if(!req.body){// if content of request (form data) is empty
         res.status(400).send({ message : "Content cannot be emtpy!"});// respond with this
         return;
-    }
+    }*/
 
     //create new drug
     const drug = new Drugdb({
